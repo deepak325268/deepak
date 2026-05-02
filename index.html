@@ -19,7 +19,7 @@
     
     /* FIX 2: cert-container hidden — lekin position:absolute taaki content leak na ho */
     .cert-container { display: none; width: 900px; background: radial-gradient(circle, #ffffff, #fdfbf5); padding: 50px; border: 15px solid #1a237e; box-shadow: inset 0 0 0 5px #daa520, 0 15px 35px rgba(0,0,0,0.2); margin: 20px auto; text-align: center; position: relative; box-sizing: border-box; overflow: hidden; }
-    .watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; opacity: 0.06; z-index: 1; }
+    .watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; opacity: 0.13; z-index: 1; }
     .content-wrapper { position: relative; z-index: 2; }
     .header-layout { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px; }
     .college-logo { width: 130px; margin-bottom: 15px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1)); }
@@ -60,7 +60,7 @@
       .cert-subtitle { font-size: 16px !important; margin-bottom: 8px !important; }
       .content-text { font-size: 15px !important; line-height: 1.7 !important; margin-top: 15px !important; }
       .student-name { font-size: 34px !important; margin: 6px 0 !important; }
-      .signatures { margin-top: 30px !important; }
+      .signatures { margin-top: 60px !important; padding-top: 20px !important; }
       .watermark { width: 380px !important; }
     }
   </style>
@@ -99,7 +99,7 @@
       
       <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 40px; margin-top: 30px;">
         <div style="flex: 1; margin-left: 140px; text-align: center;">
-          <p style="font-size: 18px; margin: 0; font-family: 'Lora', serif; font-style: italic;">This certificate is proudly presented to</p>
+          <p style="font-size: 22px; margin: 0; font-family: 'Lora', serif; font-style: italic;">This certificate is proudly presented to</p>
           <div class="student-name" id="certName">Student Name</div>
           <p style="font-size: 18px; margin: 0;"><strong>Roll No.: <span id="certRoll">Roll</span></strong></p>
         </div>
@@ -110,7 +110,7 @@
         who is a student of the <strong>D.El.Ed. programme for the Session 2024-26</strong> and has successfully completed a 120-day School Internship Programme at <strong id="certSchool">School Name</strong> from <strong>December 2025 to April 2026</strong>. During the internship period, the student demonstrated strong dedication and actively contributed to various school activities. Furthermore, the student's behavior and overall performance were found to be highly satisfactory.
       </div>
       
-      <p style="margin-top: 40px; font-size: 20px; font-weight: bold; color: #1a237e;">We wish the student continued success in all future pursuits.</p>
+      <p style="margin-top: 20px; font-size: 20px; font-weight: bold; color: #1a237e;">We wish the student continued success in all future pursuits.</p>
 
       <div class="signatures">
         <div class="sign-block"><strong>PRINCIPAL</strong><br>Mithila Teachers' Training College</div>
